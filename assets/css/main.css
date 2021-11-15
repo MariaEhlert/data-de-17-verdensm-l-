@@ -1,0 +1,78 @@
+body {
+  margin: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+body.noScoll {
+  overflow-y: hidden;
+}
+
+body .goalContainer {
+  padding: 3%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+}
+
+body .goalContainer .wrapper {
+  position: relative;
+}
+
+body .goalContainer .wrapper h2 {
+  text-align: center;
+  color: white;
+  padding: 3%;
+  font-size: 2vw;
+}
+
+body .goalContainer .wrapper div {
+  padding: 20%;
+}
+
+body .goalContainer .wrapper div svg {
+  fill: white;
+}
+
+body .goalContainer .wrapper a {
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+body .modalWrapper {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  overflow: auto;
+  height: 100%;
+}
+
+body .modalWrapper .modalContainer {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+}
+
+body .modalWrapper .modalContainer .close {
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+body .modalWrapper .modalContainer div {
+  margin: 0 auto;
+  width: 10%;
+}
+
+body .modalWrapper .modalContainer div svg {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

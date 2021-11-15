@@ -1,0 +1,68 @@
+body{
+    margin: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    //noScoll er en classen som er oprettet i readMore addEventListener
+    //onScoll classen bliver fjernet igen i close onclick
+    //det gør at der ikke er to scoll bar når vi har åbnet vores modal
+    &.noScoll{
+        overflow-y: hidden;
+    }
+    .goalContainer{
+        padding: 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+        .wrapper{
+            position: relative;
+            
+            h2{
+                text-align: center;
+                color: white;
+                padding: 3%;
+                font-size: 2vw;
+            }
+            div{
+                padding: 20%;
+                svg{
+                    fill: white;
+                }
+            }
+            a{
+                color: white;
+                position: absolute;
+                bottom: 2%;
+                left: 2%;
+                font-size: 1vw;
+                cursor: pointer
+            }
+
+        }
+    }
+    .modalWrapper{
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        overflow: auto;
+        height: 100%;
+        .modalContainer{
+            text-align: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 3%;
+            .close{
+                font-size: 3vw;
+                cursor: pointer;
+            }
+            div{
+                margin: 0 auto;
+                width: 10%;
+                svg{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
